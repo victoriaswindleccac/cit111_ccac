@@ -22,8 +22,7 @@ public class MysteryyyDooors {
         int userSelection;
         
         System.out.println("*MYSTERYYY DOOORSS?!?!?!*");
-        System.out.println("* 1 *     * 2 *     | 3 |");
-        System.out.println("-----  -----  -----");
+        System.out.println("* 1 *     * 2 *     * 3 *")
         System.out.println("Choose a door to recieve some useless information!");
        
         userSelection = keyboardScanner.nextInt();
