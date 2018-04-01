@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Currency
 {
 public static void main (String [] args){
+    //variable list
     char us_dollar_sym = 36;
     char pound_sym = 163;
     char yen_sym = 165;
@@ -23,14 +24,17 @@ public static void main (String [] args){
     String yen = "Yen";
     String euro = "Euros";
     double rate = 0;
+    //start of program
     System.out.println("Welcome to the Currency Converter Program");
     System.out.println("Use the following codes to input your currency choices:"
             + "\n 1 - US dollars \n 2 - Euros \n 3 - British Pounds \n 4 - Japanese Yen \n");
     
-    System.out.println("Please choose the input currency:");
+    //this is for the currency you have
+    System.out.println("Please choose the currency to start with:");
    Scanner in = new Scanner(System.in);
    int choice = in.nextInt();
     
+    //Switch from differnt currencys
     String inType = null;
     switch(choice) {
         case 1: inType = "US Dollars >> "  + us_dollar_sym; break;
@@ -57,6 +61,7 @@ public static void main (String [] args){
         rate = input * dollar_euro_rate;
         System.out.printf( "%s" + input + " at a conversion rate of " + dollar_euro_rate + "Dollars to %s = %.2f\n", (char)us_dollar_sym, euro, rate);
     }
+    //this starts all of the possibilities with all of the currency that is given
     else if (choice == 1 && output == 3){
         double dollar_pound_rate = 0.621484;
         rate = input * dollar_pound_rate;
@@ -106,6 +111,7 @@ public static void main (String [] args){
                 double yen_pound_rate = 0.00579135;       
              System.out.printf( "%s" + input + " at a conversion rate of " + yen_pound_rate + "Yen to %s = %.2f\n", (char)yen_sym, pound, rate);
                 }
+             //this is end 
                 System.out.println("Thank you for using the currency converter");
                 }    
                 }  
